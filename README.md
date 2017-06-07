@@ -4,7 +4,7 @@ see https://aws.amazon.com/cli/
 ##Building docker build -t aws-cli .
 
 ##Running
-...
+
 aws() {
 	docker run --rm -it \
 		-m 1024m \
@@ -15,5 +15,4 @@ aws() {
 		--env AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION} \
 		aws-cli "$@"
 }
-...
 
