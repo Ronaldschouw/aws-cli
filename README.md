@@ -1,2 +1,2 @@
 # aws-cli
-AWS command line on Alpine
+AWS command line in a docker container with Alpine
