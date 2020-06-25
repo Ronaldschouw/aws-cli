@@ -1,9 +1,9 @@
-FROM alpine:3.6
+FROM alpine
 
 RUN apk update && \
 		apk add python py-pip ca-certificates groff less && \
 		rm -rf /var/cache/apk/* && \
-		pip install awscli==1.11.129
+		pip install awscli
 
 ADD config /root/.aws/config
 
