@@ -7,4 +7,3 @@ RUN apk update && \
 
 ADD config /root/.aws/config
 
-ENTRYPOINT ["aws"]
