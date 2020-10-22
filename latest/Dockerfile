@@ -5,5 +5,5 @@ RUN apk update && \
 		rm -rf /var/cache/apk/* && \
 		pip install awscli
 
-ADD config /root/.aws/config
-
+ADD keeprunning.sh /
+CMD  /keeprunning.sh
